@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>How many fingers do I have?</p>
+	<p><input type="text" id="guess"> <button id="checkbox">guess it</button></p>
+	<script type="text/javascript">
+		document.getElementById("checkbox").onclick = function() {
+			var randomnumber = Math.random();
+			randomnumber = randomnumber * 6;
+			randomnumber = Math.floor(randomnumber);
+			if (document.getElementById("guess").value == randomnumber) {
+				alert("guess it");
+			} else {
+				alert("try again " + randomnumber);
+			}
+		}
+	
+	</script>
+</body>
+
+</html>

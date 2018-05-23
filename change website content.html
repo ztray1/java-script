@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p id="text">Hello world</p>
+	<button id="mybutton">change text</button>
+	<p id ="secondparagraph">javascript is </p>
+	<button id="secondbutton">Append Text</button>
+	<p></p>
+	<script type="text/javascript">
+		var type="4555";
+		document.getElementById("mybutton").onclick = function() {
+			document.getElementById("text").innerHTML = "Hello Rob";
+		}
+		document.getElementById("secondbutton").onclick = function() {
+			document.getElementById("secondparagraph").innerHTML = "I think " + document.getElementById("secondparagraph").innerHTML + " is awesome";
+		}
+		console.log(type);
+
+	</script>
+</body>
+</html>
