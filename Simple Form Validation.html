@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form name="Allenbox">
+		<input type="checkbox" name="thebox"/>
+		<input type="button" value="press me!" onclick="validator()"/>
+	</form>
+	<script type="text/javascript">
+		function validator(){
+			if (document.Allenbox.thebox.checked)
+				alert("checked");
+			else
+				alert("you better check this");
+		}
+
+	</script>
+
+
+</body>
+</html>
